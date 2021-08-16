@@ -466,6 +466,10 @@ public class HtmlSpanner {
 
         registerHandler("font", new FontHandler());
 
+        registerHandler("s", new StrikethroughHandler());
+
+        registerHandler("u", new UnderlineHandler());
+
         Style spanStyle = new Style().setDisplayStyle(Style.DisplayStyle.INLINE);
         TagNodeHandler spanHandler = new BorderAttributeHandler(wrap(new StyledTextHandler(spanStyle)));
         registerHandler("span", spanHandler);
