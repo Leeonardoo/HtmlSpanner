@@ -18,9 +18,7 @@ allprojects {
         jcenter()
         google()
         mavenCentral()
-        maven {
-            url "http://repo.pageturner-reader.org"
-        }
+        maven { url 'https://jitpack.io' }
     }
 
 }
@@ -28,8 +26,8 @@ allprojects {
 apply plugin: 'com.android.library'
 
 dependencies {
-    compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.16'
-    compile 'com.osbcp.cssparser:cssparser:1.5'
+    compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.26'
+    compile 'com.github.Leeonardoo:osbcp-css-parser:cssparser-1.7'
 }
 
 android {
